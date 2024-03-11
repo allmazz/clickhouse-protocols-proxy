@@ -97,14 +97,13 @@ func (c *Controller) bind() {
 		}
 
 		res, err := c.native.Query(ctx, q)
-		if err != nil {
-			if err.Error() != "EOF" {
-				ctx.String(400, err.Error())
-			}
+		if err == nil {
+			ctx.JSON(200, res)
+		} else if err.Error() == "EOF" {
 			ctx.String(200, "")
-			return
+		} else {
+			ctx.String(400, err.Error())
 		}
-		ctx.JSON(200, res)
 	})
 }
 
