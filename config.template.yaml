@@ -7,7 +7,7 @@ target:
   maxConnectionPerUser: ${TARGET_MAX_CONNECTION_PER_USER}
   maxConnectionLifetime: ${TARGET_MAX_CONNECTION_LIFETIME}
   dialTimeout: ${TARGET_DIAL_TIMEOUT}
-  readTimeout: ${TARGET_REAL_TIMEOUT}
+  readTimeout: ${TARGET_READ_TIMEOUT}
 
   debug: ${TARGET_DEBUG}
 server:

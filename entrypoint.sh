@@ -2,4 +2,4 @@
 set -e
 
 cat config.template.yaml | envsubst > config.yaml
-./ch-p-proxy config.yaml
+./clickhouse-protocol-proxy config.yaml
