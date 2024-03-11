@@ -1,1 +1,1 @@
-# clickhouse-protocols-proxy
+# clickhouse-protocol-proxy

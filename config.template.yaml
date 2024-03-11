@@ -1,0 +1,14 @@
+log:
+  level: ${LOG_LEVEL}
+target:
+  hosts:
+    - ${TARGET_HOST}
+
+  maxConnectionPerUser: ${TARGET_MAX_CONNECTION_PER_USER}
+  maxConnectionLifetime: ${TARGET_MAX_CONNECTION_LIFETIME}
+  dialTimeout: ${TARGET_DIAL_TIMEOUT}
+  readTimeout: ${TARGET_REAL_TIMEOUT}
+
+  debug: ${TARGET_DEBUG}
+server:
+  addr: ${SERVER_ADDR}
