@@ -3,7 +3,7 @@ module github.com/allmazz/clickhouse-protocol-proxy/clickhouse-protocol-proxy
 go 1.22
 
 require (
-	github.com/ClickHouse/clickhouse-go/v2 v2.20.0
+	github.com/ClickHouse/clickhouse-go/v2 v2.23.0
 	github.com/gin-contrib/zap v1.1.0
 	github.com/gin-gonic/gin v1.9.1
 	go.uber.org/zap v1.27.0
